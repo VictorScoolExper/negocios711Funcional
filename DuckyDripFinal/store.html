@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Ducky Drip</title>
+
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/coming-sssoon.css" rel="stylesheet" />
+
+  <!--     Fonts     -->
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-transparent navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <div class="nav navbar-nav">
+          <a href="./index.html">
+            <img src="./images/duckydrip.png" width="70" height="70">
+          </a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="./store.html">
+              2021 Season Coleccion
+            </a>
+          </li>
+
+          <li>
+            <a href="./about.html">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a data-toggle="modal" data-target="#cart">
+              Cart (<span class="total-count"></span>)
+            </a>
+          </li>
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+  <div class="main" style="background-color: rgba(53, 51, 51, 0.6);">
+
+    <div class="cover black" data-color="black"></div>
+
+    <div class="content text-center" style="margin-top: 90px;">
+      <div style="margin-bottom: 3%;">
+
+      </div>
+      <div class="container">
+        <div class="row">
+          <!--List of products-->
+          <div class="col-sm-6 col-md-6">
+            <div class="thumbnail">
+              <img src="./images/pic1.jpg" class="img-rounded" alt="redShirtAsian">
+              <div class="caption">
+                <h3>Light Trapped In Matter</h3>
+                <p>Price: $50</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button" data-toggle="modal"
+                    data-target="#infoItem1">Info</a>
+                  <a href="#" data-name="Light Trapped In Matter" data-price="50" data-photo="pic1.jpg"data-toggle="modal"
+                     data-target="#msgAddCart" onclick="addedCart('Light Trapped In Matter', 'pic1.jpg')"
+                     class="add-to-cart btn btn-default" role="button">Add to Cart</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6">
+            <div class="thumbnail">
+              <img src="./images/pic2combo.jpg" class="img-rounded" alt="...">
+              <div class="caption">
+                <h3>Black and White Combo</h3>
+                <p>Price: $90</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button" data-toggle="modal"
+                    data-target="#infoItem2">Info</a>
+                  <a href="#" data-name="Black and White Combo" data-price="90" data-photo="pic2combo.jpg" data-toggle="modal"
+                    data-target="#msgAddCart" onclick="addedCart('Black and White Combo', 'pic2combo.jpg')" class="add-to-cart btn btn-default"
+                    role="button">Add to Cart</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6">
+            <div class="thumbnail">
+              <img src="./images/pic3.jfif" class="img-rounded" alt="...">
+              <div class="caption">
+                <h3>Protect Enviroment</h3>
+                <p>Price: $50</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button" data-toggle="modal"
+                    data-target="#infoItem3">Info</a>
+                  <a href="#" data-name="Protect Enviroment" data-price="50" data-photo="pic3.jfif" data-toggle="modal"
+                    data-target="#msgAddCart" onclick="addedCart('Protect Enviroment', 'pic3.jfif')" class="add-to-cart btn btn-default" 
+                    role="button">Add to Cart</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6">
+            <div class="thumbnail">
+              <img src="./images/p3.jpg" class="img-rounded" alt="...">
+              <div class="caption">
+                <h3>Black and White Queen</h3>
+                <p>Price: $50</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button" data-toggle="modal"
+                    data-target="#infoItem4">Info</a>
+                  <a href="#" data-name="Black and White Queen" data-price="50" data-photo="p3.jpg" data-toggle="modal"
+                    data-target="#msgAddCart" onclick="addedCart('Black and White Queen', 'p3.jpg')"
+                    class="add-to-cart btn btn-default" role="button">Add to Cart</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6">
+            <div class="thumbnail">
+              <img src="./images/pic4.jfif" class="img-rounded" alt="...">
+              <div class="caption">
+                <h3>Smacked Smile</h3>
+                <p>Price: $50</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button" data-toggle="modal"
+                    data-target="#infoItem5">Info</a>
+                  <a href="#" data-name="Smacked Smile" data-price="50" data-photo="pic4.jfif" data-toggle="modal"
+                    data-target="#msgAddCart" onclick="addedCart('Smacked Smile', 'pic4.jfif')"
+                    class="add-to-cart btn btn-default" role="button">Add to Cart</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6">
+            <div class="thumbnail">
+              <img src="./images/pic5.jfif" class="img-rounded" alt="...">
+              <div class="caption">
+                <h3>Brave Freedom</h3>
+                <p>Price: $50</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button" data-toggle="modal"
+                    data-target="#infoItem6">Info</a>
+                  <a href="#" data-name="Brave Freedom" data-price="50" data-photo="pic5.jfif" data-toggle="modal"
+                    data-target="#msgAddCart" onclick="addedCart('Brave Freedom', 'pic5.jfif')"
+                    class="add-to-cart btn btn-default" role="button">Add to Cart</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6">
+            <div class="thumbnail">
+              <img src="./images/pic6.jfif" class="img-rounded" alt="...">
+              <div class="caption">
+                <h3>Praying Hands</h3>
+                <p>Price: $50</p>
+                <p>
+                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#infoItem7"
+                    role="button">Info</a>
+                  <a href="#" data-name="Praying Hands" data-price="50" data-photo="pic6.jfif" data-toggle="modal"
+                    data-target="#msgAddCart" onclick="addedCart('Praying Hands', 'pic6.jfif')"
+                    class="add-to-cart btn btn-default" role="button">Add to Cart</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <br>
+    <br>
+
+
+
+    <!-- Modal cart -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table">
+
+            </table>
+            <div>Total price: $<span class="total-cart"></span></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="clear-cart btn btn-warning" data-dismiss="modal">Cancel Order</button>
+            <button type="button" onclick="window.location.href='./checkout.html'"  class="btn btn-primary" data-dismiss="modal">Order now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal Info1-->
+    <div class="modal fade" id="infoItem1" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Ducky Drip Clothing Description</h4>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <div class="col-12">
+                <div class="thumbnail">
+                  <img src="./images/pic1.jpg" class="img-rounded" alt="redShirtAsian">
+                  <div class="caption">
+                    <h3>Light Trapped In Matter</h3>
+                    <p>This a oversized shirt that is made with 100% peruvian cotton.</p>
+                    <p>Price: $50</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!--Modal Info2-->
+    <div class="modal fade" id="infoItem2" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Ducky Drip Clothing Description</h4>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <div class="col-12">
+                <div class="thumbnail">
+                  <img src="./images/pic2combo.jpg" class="img-rounded" alt="...">
+                  <div class="caption">
+                    <h3>Black and White Combo</h3>
+                    <p>This two pairs are shirt are oversized made with high quality egyptian cotton.</p>
+                    <p>Price: $90</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!--Modal Info3-->
+    <div class="modal fade" id="infoItem3" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Ducky Drip Clothing Description</h4>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <div class="col-12">
+                <div class="thumbnail">
+                  <img src="./images/pic3.jfif" class="img-rounded" alt="...">
+                  <div class="caption">
+                    <h3>Protect Enviroment</h3>
+                    <p>Protect Enviroment", "Part of the proceeding from this shirt goes to eco friendly programs, shirt
+                      is made from 100% organic cotton and is certified fair trade</p>
+                    <p>Price: $50</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!--Modal Info4-->
+    <div class="modal fade" id="infoItem4" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Ducky Drip Clothing Description</h4>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <div class="col-12">
+                <div class="thumbnail">
+                  <img src="./images/p3.jpg" class="img-rounded" alt="...">
+                  <div class="caption">
+                    <h3>Black and White Queen</h3>
+                    <p>This is 100% peruvian cotton that is fair trade certified. The shirt is oversized.</p>
+                    <p>Price: $50</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!--Modal Info5-->
+    <div class="modal fade" id="infoItem5" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Ducky Drip Clothing Description</h4>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <div class="col-12">
+                <div class="thumbnail">
+                  <img src="./images/pic4.jfif" class="img-rounded" alt="...">
+                  <div class="caption">
+                    <h3>Smacked Smile</h3>
+                    <p>This cotton is made from other recycled fabrics. The shirt is oversiezed.</p>
+                    <p>Price: $50</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!--Modal Info6-->
+    <div class="modal fade" id="infoItem6" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Ducky Drip Clothing Description</h4>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <div class="col-12">
+                <div class="thumbnail">
+                  <img src="./images/pic5.jfif" class="img-rounded" alt="...">
+                  <div class="caption">
+                    <h3>Brave Freedom</h3>
+                    <p>This shirt is made from 70% cotton and 20% polyester</p>
+                    <p>Price: $50</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!--Modal Info7-->
+    <div class="modal fade" id="infoItem7" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Ducky Drip Clothing Description</h4>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <div class="col-12">
+                <div class="thumbnail">
+                  <img src="./images/pic6.jfif" class="img-rounded" alt="...">
+                  <div class="caption">
+                    <h3>Praying Hands</h3>
+                    <p>This shirt is made of 100% egyptian cotton and is oversized.</p>
+                    <p>Price: $50</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!--Added to cart -->
+    <div class="modal fade" id="msgAddCart" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="showAddedCartItem">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <div class="footer">
+      <div class="text-center">
+        <div class="column">
+
+          <a href="https://www.facebook.com/Ducky-Drip-100110168915431">
+            <i class="fa fa-facebook-square"></i>
+            Facebook
+          </a>
+
+
+          <a href="https://www.instagram.com/duckydrip/">
+            <i class="fa  fa-instagram"></i>
+            Instagram
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="./store.js" type="text/javascript"></script>
+
+</html>
